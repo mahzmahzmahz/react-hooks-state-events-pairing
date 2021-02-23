@@ -15,11 +15,15 @@ function Comments ({ comments }){
     return <Comment key={comment.id} user={comment.user} comment={comment.comment}/>
     });
     console.log(commentItem)
-
+//    const Results = () => (
+//        <div id="results" className="search-results">
+//         {commentItem}
+//         </div>
+//        )
 
    return(
        <div>
-           <button onClick={hideComment} value="search" > { showingComment ? "Hide" : "Show "} Comment </button>
+           <button onClick={hideComment} value="search" > { showingComment ? "Hide Comment" : "Show Comment "} Comment</button>
            <h1>{comments.length} Comments</h1>
                {showingComment ? commentItem : null}
        </div>
